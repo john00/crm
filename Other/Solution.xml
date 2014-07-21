@@ -85,6 +85,11 @@
       <RootComponent type="1" schemaName="new_bukken" />
       <RootComponent type="1" schemaName="new_places" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="20" displayName="システム カスタマイザー " solution="System" id="{417adcdc-e3e6-e311-9d9a-d89d67642f34}" parentId="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+        <Dependent key="1" type="60" displayName="テストフォーム" parentDisplayName="物件" id="{589b255b-b253-4d1d-8e7c-6185f0ecab70}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
