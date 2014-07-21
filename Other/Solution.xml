@@ -83,7 +83,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="new_bukken" />
-      <RootComponent type="20" id="{7ee82047-c1f7-e311-b105-d89d6765a2c4}" />
+      <RootComponent type="1" schemaName="new_places" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>

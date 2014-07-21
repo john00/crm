@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{92f65678-fe4e-4ea1-83cd-0474182b024a}</formid>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FormPresentation>0</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form>
+    <tabs>
+      <tab name="general" verticallayout="true" id="{2ffbc864-3d96-4695-81e2-47b966d9f6d6}" IsUserDefined="0">
+        <labels>
+          <label description="" languagecode="1041" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section name="account information" showlabel="false" showbar="false" id="{c8fd3268-025f-4d20-8529-1015e2324404}" IsUserDefined="0">
+                <labels>
+                  <label description="" languagecode="1041" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{ca07af67-e65b-4e28-af6b-f651c8572945}">
+                      <labels>
+                        <label description="名前" languagecode="1041" />
+                      </labels>
+                      <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                    </cell>
+                    <cell id="{9c735ff0-fdd5-4dde-8bcb-0ab6cc6e0896}">
+                      <labels>
+                        <label description="状態" languagecode="1041" />
+                      </labels>
+                      <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                    </cell>
+                    <cell id="{4b584997-cd04-43e1-b562-c9ed629e9b75}">
+                      <labels>
+                        <label description="所有者" languagecode="1041" />
+                      </labels>
+                      <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="情報" languagecode="1041" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="CRM Mobile アプリケーションに表示されるフォームです。" languagecode="1041" />
+  </Descriptions>
+</systemform>
