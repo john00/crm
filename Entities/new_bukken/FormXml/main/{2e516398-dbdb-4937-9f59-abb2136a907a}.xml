@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{2e516398-dbdb-4937-9f59-abb2136a907a}</formid>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FormPresentation>1</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form>
+    <tabs>
+      <tab verticallayout="true" id="{51bc0320-a7a8-4a0f-9634-576b7a0ce04e}" IsUserDefined="1">
+        <labels>
+          <label description="全般" languagecode="1041" />
+        </labels>
+        <columns>
+          <column width="33%">
+            <sections>
+              <section showlabel="false" showbar="false" IsUserDefined="0" id="{7c053c03-1a3e-40b9-bed9-9b62b2f0c916}">
+                <labels>
+                  <label description="全般" languagecode="1041" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{3731a53b-445c-4b37-afd5-74b2432ede1a}">
+                      <labels>
+                        <label description="名前" languagecode="1041" />
+                      </labels>
+                      <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{b2197851-ef03-4ced-a10c-a6ba82df8ed4}">
+                      <labels>
+                        <label description="所有者" languagecode="1041" />
+                      </labels>
+                      <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+          <column width="66%">
+            <sections>
+              <section showlabel="false" showbar="false" id="{c147b38b-eaf3-4711-90ce-3b3052b40b1c}" IsUserDefined="0" height="auto">
+                <labels>
+                  <label description="メモ" languagecode="1041" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell showlabel="false" rowspan="15" auto="false" id="{2c3acf7c-5794-4015-9b06-a01d45a435a3}">
+                      <labels>
+                        <label description="メモのテキスト" languagecode="1041" />
+                      </labels>
+                      <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                        <parameters>
+                          <DefaultTabId>NotesTab</DefaultTabId>
+                        </parameters>
+                      </control>
+                    </cell>
+                  </row>
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row height="auto" />
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="情報" languagecode="1041" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="このエンティティ用のフォームです。" languagecode="1041" />
+  </Descriptions>
+</systemform>

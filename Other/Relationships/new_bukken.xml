@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="new_bukken_ActivityPointers">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>ActivityPointer</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>RemoveLink</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="活動が関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>0</NavPaneOrder>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_Annotations">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Annotation</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="メモが関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="objectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_Appointments">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Appointment</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="予定が関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_AsyncOperations">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>AsyncOperation</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>NoCascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="システム ジョブが関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_BulkDeleteFailures">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>BulkDeleteFailure</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="削除できないレコードを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="名前" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_connections1">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Connection</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>Record1Id</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="ソース レコードを表す一意識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="record1id" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="connection">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="接続元" languagecode="1041" />
+      </displaynames>
+    </field>
+    <EntityRelationshipRoles>
+      <EntityRelationshipRole>
+        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+        <NavPaneArea>Details</NavPaneArea>
+        <NavPaneOrder>100</NavPaneOrder>
+      </EntityRelationshipRole>
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_connections2">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Connection</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>Record2Id</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="ターゲット レコードを表す一意識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="record2id" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="connection">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="接続先" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_DuplicateBaseRecord">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>DuplicateRecord</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>BaseRecordId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="基本のレコードを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="baserecordid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="基本のレコード ID" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_DuplicateMatchingRecord">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>DuplicateRecord</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>DuplicateRecordId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="重複している可能性のあるレコードを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="duplicaterecordid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="重複レコード ID" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_Emails">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Email</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="電子メールが関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_Faxes">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Fax</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="FAX 活動が関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_Letters">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Letter</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="レター活動が関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_PhoneCalls">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>PhoneCall</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="電話活動が関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_PrincipalObjectAttributeAccesses">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>PrincipalObjectAttributeAccess</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="セキュリティで保護された共有フィールドを持つエンティティ インスタンスを表す一意識別子です" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="objectid" requiredlevel="systemrequired" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="エンティティ インスタンス" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_ProcessSession">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>ProcessSession</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>NoCascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="ダイアログ セッションが関連付けられているオブジェクトの一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_RecurringAppointmentMasters">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>RecurringAppointmentMaster</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="定期的な予定の系列が関連付けられているオブジェクトを表す一意識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_ServiceAppointments">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>ServiceAppointment</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="サービス活動が関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_SocialActivities">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>SocialActivity</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="ソーシャル活動に関連するレコードを表示します。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+      <IsAuditEnabled>0</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_Tasks">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>Task</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>Cascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>Cascade</CascadeReparent>
+    <CascadeShare>Cascade</CascadeShare>
+    <CascadeUnshare>Cascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="タスクが関連付けられているオブジェクトを表す一意の識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="関連" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="new_bukken_UserEntityInstanceDatas">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <ReferencingEntityName>UserEntityInstanceData</ReferencingEntityName>
+    <ReferencedEntityName>new_bukken</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="ソース レコードを表す一意識別子です。" languagecode="1041" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="objectid" requiredlevel="systemrequired" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="オブジェクト ID" languagecode="1041" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+</EntityRelationships>

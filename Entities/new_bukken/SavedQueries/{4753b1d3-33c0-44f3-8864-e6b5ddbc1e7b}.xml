@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedquery>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>0</CanBeDeleted>
+  <isquickfindquery>0</isquickfindquery>
+  <isprivate>0</isprivate>
+  <isdefault>1</isdefault>
+  <returnedtypecode>10005</returnedtypecode>
+  <savedqueryid>{4753b1d3-33c0-44f3-8864-e6b5ddbc1e7b}</savedqueryid>
+  <layoutxml>
+    <grid name="resultset" object="10005" jump="new_name" select="1" icon="1" preview="1">
+      <row name="result" id="new_bukkenid">
+        <cell name="new_name" width="300" />
+        <cell name="createdon" width="125" />
+      </row>
+    </grid>
+  </layoutxml>
+  <querytype>1</querytype>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="new_bukken">
+        <attribute name="new_bukkenid" />
+        <attribute name="new_name" />
+        <attribute name="createdon" />
+        <order attribute="new_name" descending="false" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <LocalizedNames>
+    <LocalizedName description="物件の高度な検索ビュー" languagecode="1041" />
+  </LocalizedNames>
+</savedquery>

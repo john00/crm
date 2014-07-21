@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="business_unit_new_bukken" />
+  <EntityRelationship Name="lk_new_bukken_createdby" />
+  <EntityRelationship Name="lk_new_bukken_modifiedby" />
+  <EntityRelationship Name="new_bukken_ActivityPointers" />
+  <EntityRelationship Name="new_bukken_Annotations" />
+  <EntityRelationship Name="new_bukken_Appointments" />
+  <EntityRelationship Name="new_bukken_AsyncOperations" />
+  <EntityRelationship Name="new_bukken_BulkDeleteFailures" />
+  <EntityRelationship Name="new_bukken_connections1" />
+  <EntityRelationship Name="new_bukken_connections2" />
+  <EntityRelationship Name="new_bukken_DuplicateBaseRecord" />
+  <EntityRelationship Name="new_bukken_DuplicateMatchingRecord" />
+  <EntityRelationship Name="new_bukken_Emails" />
+  <EntityRelationship Name="new_bukken_Faxes" />
+  <EntityRelationship Name="new_bukken_Letters" />
+  <EntityRelationship Name="new_bukken_PhoneCalls" />
+  <EntityRelationship Name="new_bukken_PrincipalObjectAttributeAccesses" />
+  <EntityRelationship Name="new_bukken_ProcessSession" />
+  <EntityRelationship Name="new_bukken_RecurringAppointmentMasters" />
+  <EntityRelationship Name="new_bukken_ServiceAppointments" />
+  <EntityRelationship Name="new_bukken_SocialActivities" />
+  <EntityRelationship Name="new_bukken_Tasks" />
+  <EntityRelationship Name="new_bukken_UserEntityInstanceDatas" />
+  <EntityRelationship Name="owner_new_bukken" />
+  <EntityRelationship Name="team_new_bukken" />
+  <EntityRelationship Name="user_new_bukken" />
+</EntityRelationships>
