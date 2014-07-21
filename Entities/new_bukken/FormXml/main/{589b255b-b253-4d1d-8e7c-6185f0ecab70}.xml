@@ -54,14 +54,6 @@
                     </cell>
                   </row>
                   <row>
-                    <cell id="{92cbdc01-ca97-1c88-81a6-32d4457eb104}" showlabel="true" locklevel="0" labelid="{0abeb1bd-1a13-4334-aae2-f5d183551ed6}">
-                      <labels>
-                        <label description="作成者 (代理)" languagecode="1041" />
-                      </labels>
-                      <control id="createdonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdonbehalfby" disabled="false" />
-                    </cell>
-                  </row>
-                  <row>
                     <cell id="{e1248e0d-87d2-ec64-7b43-b15cead99ce9}" showlabel="true" locklevel="0" labelid="{547dd192-47c0-4d56-a969-1f7d9d067d86}">
                       <labels>
                         <label description="作成日" languagecode="1041" />
@@ -75,6 +67,14 @@
                         <label description="状態" languagecode="1041" />
                       </labels>
                       <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{5dc884bb-b06a-19e3-8ae5-a27218c9b985}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="作成者" languagecode="1041" />
+                      </labels>
+                      <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
                     </cell>
                   </row>
                   <row>
